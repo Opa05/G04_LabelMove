@@ -1,0 +1,19 @@
+﻿<Window x:Class="G04_LabelMove.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:G04_LabelMove"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="MainGrid" Background="#FFD7DCA2" MouseLeftButtonUp="MainGrid_MouseLeftButtonUp" MouseMove="MainGrid_MouseMove" >
+        <Label x:Name="GMove" Content="GridMove" HorizontalAlignment="Left" Margin="50,80,0,0" VerticalAlignment="Top" Width="78" Background="#FF6CD1B1" MouseLeftButtonDown="GMove_MouseLeftButtonDown"/>
+        <Label x:Name="Ampel1" Content="Ampel_1" HorizontalAlignment="Left" Margin="50,211,0,0" VerticalAlignment="Top" Width="200" Background="Yellow"/>
+        <Label x:Name="Ampel2" Content="Ampel_2" HorizontalAlignment="Left" Margin="50,258,0,0" VerticalAlignment="Top" Width="200" Background="Yellow"/>
+        <Label x:Name="Ampel3" Content="Ampel_3" HorizontalAlignment="Left" Margin="50,306,0,0" VerticalAlignment="Top" Width="200" Background="Yellow"/>
+        <Label x:Name="Ampel4" Content="Ampel_4" HorizontalAlignment="Left" Margin="50,354,0,0" VerticalAlignment="Top" Width="200" Background="Yellow"/>
+        <Canvas x:Name="Spielplatz" Margin="400,10,10,10" Background="#FFF3DADA">
+            <Label x:Name="CMove"   Content="CanvasMove"   HorizontalAlignment="Left" Canvas.Left="50" Canvas.Top="50" Width="100" Background="#FF5CE0CE" MouseLeftButtonDown="CMove_MouseLeftButtonDown"/>
+        </Canvas>
+    </Grid>
+</Window>
